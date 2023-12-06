@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--date picker import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+    </script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/soft+trade.ico" type="image/x-icon">
+    <!--icons-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--validação-->
+    <script src="assets/js/script.js"></script>
+
+    <title>Soft+Trade</title>
+
+    <!--estilo próprio da página-->
+    <style>
+        body {
+            background: rgb(19, 17, 115);
+            background: linear-gradient(142deg, rgba(19, 17, 115, 1) 0%, rgba(34, 30, 154, 1) 37%, rgba(68, 63, 172, 1) 100%);
+            margin: 3%;
+            min-height: 100vh;
+            font-family: 'Montserrat';
+        }
+
+        .box-form {
+            width: 100%;
+            height: 100%;
+            background: #FFDD23;
+            box-shadow: -1px 2px 28px 40px rgba(0, 0, 0, 0.10);
+        }
+
+        .logoName {
+            color: #FFDD23;
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+
+        .slogan {
+            color: #FFDD23;
+            text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.80);
+            line-height: 286.4%;
+            letter-spacing: 18.75px;
+        }
+
+        .title {
+            color: #131173;
+            text-align: center;
+            text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.50);
+            letter-spacing: 9.9px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-12 col-lg-6 mb-2 text-center">
+                <a href="index.html" style="text-decoration: none;">
+                    <img class="mb-4" src="img/logo com cor.png" alt="" height="130px">
+                    <h1 class="logoName fw-semibold mb-4">SOFT+TRADE</h1>
+                </a>
+                <h4 class="slogan fw-medium">O MELHOR DOS MUNDOS EM UM SÓ LUGAR</h4>
+            </div>
+
+            <div class="col">
+                <div class="box-form rounded-5 p-5">
+                    <h2 class="title fw-semibold">CRIAR CONTA</h2>
+                    <br>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nome" aria-describedby="nome"
+                                placeholder="Nome Completo">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="username" aria-describedby="username"
+                                placeholder="Username">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="telefone" aria-describedby="telefone"
+                                        placeholder="Telefone">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="cidade" aria-describedby="cidade"
+                                        placeholder="Cidade">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <select class="form-select" aria-label="Default select example" id="estado">
+                                    <option value="" selected disabled>Estado</option>
+                                    <option value="1">AC</option>
+                                    <option value="2">AL</option>
+                                    <option value="3">AP</option>
+                                    <option value="4">AM</option>
+                                    <option value="5">BA</option>
+                                    <option value="6">CE</option>
+                                    <option value="7">DF</option>
+                                    <option value="8">ES</option>
+                                    <option value="9">GO</option>
+                                    <option value="10">MA</option>
+                                    <option value="11">MG</option>
+                                    <option value="12">MT</option>
+                                    <option value="13">MS</option>
+                                    <option value="14">PA</option>
+                                    <option value="15">PB</option>
+                                    <option value="16">PR</option>
+                                    <option value="17">PE</option>
+                                    <option value="18">PI</option>
+                                    <option value="19">RJ</option>
+                                    <option value="20">RN</option>
+                                    <option value="21">RS</option>
+                                    <option value="22">RO</option>
+                                    <option value="23">RR</option>
+                                    <option value="24">SC</option>
+                                    <option value="25">SE</option>
+                                    <option value="26">SP</option>
+                                    <option value="27">TO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <select class="form-select mb-3" aria-label="Default select example" id="genero">
+                                    <option value="" selected disabled>Gênero</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Feminino</option>
+                                    <option value="3">Outro / Prefiro não informar</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group date" id="datepicker">
+                                    <input type="text" class="form-control" id="date"
+                                        placeholder="Data de Nascimento" />
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-light d-block">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="cpf" placeholder="CPF (XXX.XXX.XXX-XX)">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="rg" placeholder="RG (XX.XXX.XXX-X)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="Senha">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="passwordC" placeholder="Confirmar Senha">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="check">
+                            <label class="form-check-label" for="exampleCheck1">Eu aceito os Termos de Uso</label>
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button class="btn" style="background-color: #3530BB; color: #FFFFFF;" type="submit"
+                                onclick="avancar()">Criar Conta</button>
+                        </div>
+                    </form>
+                    <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 337 2" fill="none">
+                        <path d="M0 1H337" stroke="black" stroke-opacity="0.3" />
+                    </svg>
+                    <div class="row text-center align-items-center mb-3">
+                        <div class="col">
+                            <a href="usuario.html" class="text-decoration-none">
+                                <button class="btn w-25" style="background: #3530BB;">
+                                    <img src="img/icons/facebook.svg" width="30">
+                                </button>
+                            </a>
+                            <a href="usuario.html" class="text-decoration-none">
+                                <button class="btn w-25" style="background: #3530BB;">
+                                    <img src="img/icons/google.svg" width="32">
+                                </button>
+                            </a>
+                            <a href="usuario.html" class="text-decoration-none">
+                                <button class="btn w-25" style="background: #3530BB;">
+                                    <img src="img/icons/apple.svg" width="30">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="login.html">
+                        <p class="infoSenha" style="text-align: center;">Já Tenho uma Conta</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

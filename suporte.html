@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/soft+trade.ico" type="image/x-icon">
+    <!--icons-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Soft+Trade</title>
+</head>
+
+<body>
+
+    <div class="container container-fluid bg-light">
+
+        <!--navbar-->
+        <div class="row" style="background-color: #0C0B4C;">
+            <div class="col" data-bs-theme="dark" style="background-color: #0C0B4C;">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <img src="img/logo.png" alt="logo" width="180">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item me-2">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item me-2">
+                                    <a class="nav-link" href="softwares.html">Softwares</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="hardwares.html">Hardwares</a>
+                                </li>
+                            </ul>
+                            <div class="input-group input-group-sm me-3">
+                                <input type="text" class="form-control" data-bs-theme="light"
+                                    placeholder="Busque seu Produto..." aria-label="Recipient's username"
+                                    aria-describedby="button-addon2">
+                                <button class="btn btn-outline-warning" type="button"
+                                    id="button-addon2">Pesquisar</button>
+                            </div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item me-2">
+                                    <a class="nav-link" aria-current="page" href="notificações.html">Notificações</a>
+                                </li>
+                                <li class="nav-item me-2">
+                                    <a class="nav-link" href="carrinho.html">Carrinho</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!--lateral menu-->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Soft+Trade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="softwares.html">Softwares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hardwares.html">Hardwares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="notificações.html">Notificações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrinho.html">Carrinho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row text-center align-items-center">
+            <div class="col-12 col-lg-6 mb-5">
+                <img src="img/articles/suporte.svg" class="w-100" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="fw-semibold mb-3" style="letter-spacing: 20px;">SUPORTE</h2>
+                <img src="img/logo com cor.png" class="w-50 mb-5" alt="">
+                <a href="#" class="text-decoration-none">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-lg mt-2 mb-2 fw-semibold"
+                        style="background: #FFDD23; color: #000000;">TELEFONE: (11)4002-8922</button>
+                    </div>
+                </a>
+                <a href="lua.html" class="text-decoration-none">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-lg mt-2 mb-2 fw-semibold"
+                        style="background: #FFDD23; color: #000000;">FALE COM A LUA</button>
+                    </div>
+                </a>
+                <a href="afiliação.html" class="text-decoration-none">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-lg mt-2 mb-2 fw-semibold"
+                        style="background: #FFDD23; color: #000000;">SEJA UM AFILIADO DA SOFT+TRADE</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--footer-->
+        <div class="row" data-bs-theme="dark" style="background-color: #0C0B4C;">
+            <footer class="d-flex flex-wrap justify-content-around align-items-center py-4 my-4 border-top">
+                <p class="col-md-4 mb-0 text-body-secondary">© 2023 Soft+Trade</p>
+
+                <a href="/"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="img/logo com cor.png" width="100" alt="">
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="softwares.html" class="nav-link px-2 text-body-secondary">Softwares</a></li>
+                    <li class="nav-item"><a href="hardwares.html" class="nav-link px-2 text-body-secondary">Hardwares</a></li>
+                    <li class="nav-item"><a href="suporte.html" class="nav-link px-2 text-body-secondary">FAQ</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/softrade_/" target="_blank" class="nav-link px-2 text-body-secondary">Instagram</a></li>
+                </ul>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
