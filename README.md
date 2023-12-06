@@ -6,3 +6,13 @@ Protótipos da Soft+Trade: https://www.figma.com/file/KQXATdfSevncc1QPxezQnS/Sof
 Instagram da Soft+Trade: https://www.instagram.com/softrade_/
 
 ps: para funcionamento correto do site, faça download do repositório e abra em seu navegador o arquivo "index.html", dessa forma, sua experiência será completa
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Soft+Trade Company website, using HTML, CSS, JS and Bootstrap
+
+Soft+Trade Prototypes: https://www.figma.com/file/KQXATdfSevncc1QPxezQnS/Soft%2BTrade?type=design&node-id=0%3A1&mode=design&t=GRbE1HOvV2UlNzi4-1
+
+Soft+Trade Instagram: https://www.instagram.com/softrade_/
+
+ps: for the website to function correctly, download the repository and open the "index.html" file in your browser, this way, your experience will be complete
